@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.caja{
+    background: rgb(53, 230, 127);
+    min-width: 15%;
+    max-width: 50%;
+    min-height: 15%;
+    max-height: 50%;
+    margin: 15px;
+    float: left;
+
+}
+
+.texto{
+    display: block;
+    color: white; 
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 250px;
+    padding: 15px;
+}
+
+.clearFix{
+    float: none;
+    /*Borra los floar tanto de izquierda y derecha*/
+    clear: both;
+}
+
+#cajas{
+    border: 5px solid black;
+    max-width: 50%;
+    
+}
+

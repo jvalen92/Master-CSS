@@ -1,0 +1,70 @@
+body{
+    background: rgb(224, 218, 218);
+}
+
+h1{
+    color: blue;
+    font-size: 50px;
+    text-decoration: underline;
+    background: red;
+    padding: 10px;
+}
+
+a{
+    font-size: 10px;
+    color: green;
+    text-decoration: none;
+}
+
+footer a {
+    color: blue;
+}
+
+#descripcion{
+    padding: 20px;
+    border: 1px solid green;
+}
+
+#usuario form{
+    border: 5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+#usuario form *{
+    display: block;
+}
+
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"]{
+    background: rgb(27, 152, 255);
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+/*Selectores Hijo*/
+#menu > li > a{
+    font-size: 18px;
+    color: rgb(214, 24, 24);
+    text-decoration: none;
+}
+
+/*Prioridades*/
+#saludo h1{
+    background: blue;
+    color: white;
+}
+
+h1{
+    background: purple !important;
+}

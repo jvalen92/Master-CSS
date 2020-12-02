@@ -1,0 +1,49 @@
+@colorFondo: lightblue;
+@fuente: Arial, Helvetica, sans-serif;
+
+h1{
+    font-family: @fuente;
+}
+
+body{
+    background: @colorFondo;
+}
+
+.info{
+    ul{
+        li{
+            a{
+                color: white;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+//Mixins
+
+.sombras{
+    box-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 5px black;
+}
+
+.info{
+    .sombras();
+}
+
+//operadores
+.textoNegro (@value) when (@value=blanco){
+    color: white;
+}
+
+h1{
+    color: blue;
+    .textoNegro(blanco);
+}
+
+//Bucles
+.loop(@cont) when (@cont > 0){
+    .loop((@cont - 1));
+    height: ((900px/2) * @cont);
+}
+

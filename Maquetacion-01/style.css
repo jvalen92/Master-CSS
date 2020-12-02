@@ -1,0 +1,358 @@
+@font-face {
+    font-family: "nevis";
+    src: url("./Resources/fonts/nevis.eot");
+    src: url("./Resources/fonts/nevis.eot?iefix") format("embedded-opentype"),
+    url("./Resources/fonts/nevis.woff") format("woff"),
+    url("./Resources/fonts/nevis.ttf") format("truetype"),
+    url("./Resources/fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fajala";
+    src: url("./Resources/fonts/FjallaOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url("Resources/img/paven.png");
+}
+
+a{
+    color: #70b231;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #285616;
+}
+
+a:visited{
+    color: #70b231;
+}
+
+#cabecera{
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+#cabecera a{
+    text-decoration: none;  
+}
+
+#cabecera #logotipo{
+    width: 770px;
+    margin: 0px auto;
+}
+
+#cabecera #logotipo img{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 140px;
+}
+
+#cabecera h1{
+    text-align: center;
+    font-size: 40px;
+    color: #70b231;
+    font-family: "nevis";
+    text-shadow: 0px 2px 1px #333333;
+}
+
+#cabecera h1 a {
+    color: #70b231 ;
+}
+
+#navegacion{
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    font-family: sans-serif,Arial, Helvetica;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#navegacion ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 75%;
+
+}
+
+#navegacion > ul > li{
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid gray;
+    transition: all 0.3s;
+
+}
+
+
+#navegacion > ul > li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px green inset;
+}
+
+#navegacion > ul > li a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#navegacion > ul > li:first-child{
+    border-left: 1px solid gray;
+}
+
+/*Menu desplegable*/
+#navegacion > ul > li > ul {
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+
+#navegacion > ul > li:hover > ul{
+    display: block;
+}
+
+#navegacion > ul > li:hover > ul > li{
+    display: block;
+    background-color: #F2F1F0;
+    border-bottom: 1px solid #D6D6D6;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+#navegacion > ul > li:hover > ul > li > a{
+    color: #666;
+}
+
+#navegacion > ul > li:hover > ul > li:hover{
+    background: #dddcdc;
+}
+
+#contenido{
+    width: 1250px;
+    min-width: 1100px;
+    margin: 0px auto;
+}
+
+#barra{
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#frase{
+    clear: both;
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#barra .widget{
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+}
+
+#barra .widget:last-child{
+    margin-bottom: 20px;
+}
+
+#barra h3{
+    display: block;
+    width: 100%;
+    color: #333333;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: #f2f3f2;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset; 
+    background: white;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select{
+    border: 1px solid #70b231;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block;
+    border-radius: 2px;
+    border: 1px solid green;
+    width: 60px;
+    padding: 3px;
+    background-color: #70b231;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button{
+    box-shadow: 0px 0px 2px gray;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button{
+    box-shadow: 0px 0px 3px gray inset;
+    text-shadow: 0px 0px 1px #ccc;
+}
+
+#barra div label,
+#barra div input[type="text"],
+#barra div input[type="email"],
+#barra div input[type="password"],
+#barra div a{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#barra div label,
+#barra div input[type="text"],
+#barra div input[type="email"],
+#barra div button{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#barra input,
+#barra label{
+    margin : 8px auto;
+    text-align: center;
+}
+
+#barra li{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
+
+#frase{
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.red{
+    color: lightcoral !important;
+}
+
+.blue{
+    color: lightblue !important;
+}
+
+/*Secciones*/
+#seccion{
+    float: right;
+    width: 75%;
+    font-family: sans-serif;
+    margin-right: 20px;
+}
+
+#seccion{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#seccion .titulo{
+    font-family: "fajala";
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#seccion section{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9 ;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#seccion .articulo{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#seccion .date{
+    color:gray;
+    font-size: 14px;
+}
+
+#seccion .sticker1,
+#seccion .sticker2{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+#seccion .sticker2{
+    margin-left: 930px;
+}
+

@@ -1,0 +1,22 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: lightblue;
+}
+.info ul li a {
+  color: white;
+  font-size: 18px;
+}
+.sombras {
+  box-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 5px black;
+}
+.info {
+  box-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 5px black;
+}
+h1 {
+  color: blue;
+  color: white;
+}

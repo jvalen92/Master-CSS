@@ -1,0 +1,101 @@
+h1 {
+  font-family: Helvetica, sans-serif;
+}
+
+.caja {
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  background: white;
+  padding: 10px;
+}
+.caja h1 {
+  color: red;
+}
+.caja p {
+  color: green;
+}
+.caja .info {
+  font-size: 10px;
+}
+
+.caja {
+  border: 10px solid lightblue;
+  border-radius: 10px;
+  box-shadow: 10px black;
+}
+
+.listado {
+  border: 10px solid #44e98e;
+  border-radius: 10px;
+  box-shadow: 10px black;
+}
+
+.alerta-exito, .alerta-peligro, .alerta {
+  border: 1px solid grey;
+  background: #ccc;
+  color: grey;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.alerta-peligro {
+  color: red;
+  border-color: red;
+}
+
+.alerta-exito {
+  color: green;
+  border-color: green;
+}
+
+h1 {
+  font-size: 25px -1px;
+}
+
+.caja {
+  width: 384%;
+}
+
+h1 {
+  color: black;
+}
+
+.listado ul li:nth-child(1) {
+  color: lightblue;
+  font-size: 1px100px;
+}
+
+.listado ul li:nth-child(2) {
+  color: lightblue;
+  font-size: 2px200px;
+}
+
+.listado ul li:nth-child(3) {
+  color: lightblue;
+  font-size: 3px300px;
+}
+
+.listado ul li:nth-child(4) {
+  color: lightblue;
+  font-size: 4px400px;
+}
+
+.listado ul li:nth-child(5) {
+  color: lightblue;
+  font-size: 5px500px;
+}
+
+.listado ul li:nth-child(6) {
+  color: lightblue;
+  font-size: 6px600px;
+}
+
+.listado ul li:nth-child(7) {
+  color: lightblue;
+  font-size: 7px700px;
+}
+
+/*# sourceMappingURL=style.css.map */
