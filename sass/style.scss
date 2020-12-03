@@ -3,34 +3,67 @@
 $fuente:  Helvetica, sans-serif;
 $color-fondo: lightblue;
 
+$color-primario:#2196F3;
+$color-secundario:#BBDEFB;
+$texto-blanco:#FFFFFF;
+$texto-gris:#757575;
 
+$naranja: #FF5722;
+$azul: #448AFF;
+$verde: #4CAF50;
+$rojo: #F44336;
+
+$borde:rgb(68, 233, 142);
 
 
 h1{
     font-family: $fuente;
 }
 
-//anidación
-.caja{
+//Variables
+#layout{
+    display: flex;
+    flex-flow: row wrap;
+    border: 3px solid black;
+    padding: 5px;
 
-    width: 500px;
-    margin: 0px auto;
-    text-align: center;
-    background: white;
-    padding: 10px;
-
-    h1{
-        color: red;
-    }
-
-    p{
-        color: green;
-    }
-
-    .info{
-        font-size: 10px;
-    }
+    /*Invocar variables*/
+    background: $color-fondo;
 }
+
+.caja{
+    /*flex-grow: 1;*/
+    flex-basis: 25%;
+    flex-basis: calc((100% / 3) - 68px);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: $texto-blanco;
+    padding: 20px;
+    border: 4px solid #222222;
+    margin: 10px;
+}
+
+.red{
+    order: 4;
+    background: $rojo;
+}
+.green{
+    order: 3;
+    background: $verde;
+}
+.blue{
+    order: 2;
+    background: $azul;
+}
+.orange{
+    flex-basis: 100%;
+    order: 1;
+    background: $naranja;
+}
+
+
+
 
 //Mixin y funciones
 
@@ -40,19 +73,31 @@ h1{
     box-shadow: $size $shadow;
 }
 
-.caja{
-    @include crearBordes(lightblue,10px, black)
+//Anidación
+
+.listado{
+    @include crearBordes($borde,10px, black)
 }
 
 .listado{
-    @include crearBordes(rgb(68, 233, 142),10px, black)
+    ul{
+        list-style: none;
+        li{
+            margin: 10px;
+            
+            a{
+                text-decoration: none;
+                color: $texto-gris;
+            }
+        }
+    }
 }
 
 //herencia
 
 %alert-normal{
     border: 1px solid grey;
-    background: #ccc;
+    background: $color-fondo;
     color: grey;
     padding: 10px;
     width: 80%;
@@ -66,14 +111,14 @@ h1{
 
 .alerta-peligro{
     @extend %alert-normal;
-    color: red;
-    border-color: red;
+    color: $rojo;
+    border-color: $rojo;
 }
 
 .alerta-exito{
     @extend %alert-normal;
-    color: green;
-    border-color: green;
+    color: $verde;
+    border-color: $verde;
 }
 
 //Operadores
@@ -104,6 +149,4 @@ $contador : 1;
         font-size: #{$contador}px + 100px * $contador;
     }
 }
-//EACH
 
-//WHILe
